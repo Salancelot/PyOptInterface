@@ -27,6 +27,7 @@ extern "C"
 	B(COPT_WriteBasis);            \
 	B(COPT_WriteSol);              \
 	B(COPT_WriteMst);              \
+	B(COPT_WriteNL);               \
 	B(COPT_WriteParam);            \
 	B(COPT_AddCol);                \
 	B(COPT_DelCols);               \

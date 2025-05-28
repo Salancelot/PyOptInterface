@@ -190,6 +190,10 @@ void COPTModel::write(const std::string &filename)
 	{
 		error = copt::COPT_WriteParam(m_model.get(), filename.c_str());
 	}
+	else if (filename.ends_with(".nl"))
+	{
+		error = copt::COPT_WriteNL(m_model.get(), filename.c_str());
+	}
 	else
 	{
 		throw std::runtime_error("Unknown file extension");
